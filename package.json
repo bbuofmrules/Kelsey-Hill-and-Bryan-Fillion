@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --base-href \"https://bbuofmrules.github.io/Kelsey-Hill-and-Bryan-Fillion/\"",
+    "build-google": "ng build --prod --base-href \"https://hillfillionwedding.com/\"",
     "publish": "ngh --dir dist/Kelsey-Hill-and-Bryan-Fillion"
   },
   "private": true,
