@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
 export class HomepageComponent implements OnInit {
 
   constructor(
-      private _router: Router
+    private _router: Router
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
-  about():void{
+  about(): void {
     this._router.navigate(["/about"]);
   }
 
