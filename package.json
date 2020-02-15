@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build --prod --base-href \"https://bbuofmrules.github.io/Kelsey-Hill-and-Bryan-Fillion/\"",
+    "publish ngh": "ngh --dir dist/Kelsey-Hill-and-Bryan-Fillion"
   },
   "private": true,
   "dependencies": {
@@ -17,7 +18,7 @@
     "@angular/platform-browser-dynamic": "~9.0.0",
     "@angular/router": "~9.0.0",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
-		"@typescript-eslint/parser": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
     "font-awesome": "4.7.0",
