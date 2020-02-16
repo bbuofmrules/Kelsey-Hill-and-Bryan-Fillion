@@ -29,6 +29,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -60,6 +63,8 @@ THE SOFTWARE.
 
 primeng
 MIT
+
+primeng/tabmenu
 
 regenerator-runtime
 MIT
