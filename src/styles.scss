@@ -5,15 +5,30 @@
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 
-body{
+// body{
+
+//   // margin:0;
+// }
+html, body {
+  height: 100%;
+  //margin: 0;
+  min-height: 100%;
+  //padding: 0;  
   font-family: 'Paprika';
   font-size: 22px;
 }
+
+.full{
+  height: 100%;
+  width: 100%;
+}
+
 div.main_header{
+  width:100%;
+  float:left;
   text-align: center;
-    background-color: navy; 
-    color:white;
-    //font: ;
+    background: radial-gradient(#0b1db9,#010957); 
+    color:rgb(207,174,189);
     font-family: 'Dancing Script';
     font-size: 22px;
 
@@ -22,4 +37,39 @@ div.main_header{
     font-style: normal;
   }
 }
+
+.content{
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(#ffffff,#d3d4db); 
+}
+
+p-tabMenu{
+  &.tabs{
+    .ui-state-active{
+      background: #727377;
+    }
+
+    ul{
+      &.ui-tabmenu-nav.ui-helper-reset{
+        padding: 0;
+      }
+
+      li{
+
+        &.ui-tabmenuitem.ui-state-default.ui-corner-top{
+          float:left;
+          position: relative;
+          border: 1px solid #000000;
+          margin:0;
+        } 
+
+        .ui-menuitem-text{
+          color: black
+        }
+      }
+    }
+  }
+}
+
 

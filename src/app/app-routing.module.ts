@@ -3,13 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './404/404.component';
-import { ButtonModule } from 'primeng/button';
+import { WeddingComponent } from './wedding/wedding.component';
+import { ReceptionComponent } from './reception/reception.component';
+import { RegistryComponent } from './registry/registry.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomepageComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'wedding', component: WeddingComponent },
+  { path: 'reception', component: ReceptionComponent },
+  { path: 'registry', component: RegistryComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: '**', redirectTo: '404', pathMatch: 'full' }
 
@@ -17,9 +24,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
-    ButtonModule
+    RouterModule.forRoot(routes)
   ],
-  exports: [RouterModule, ButtonModule]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

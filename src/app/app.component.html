@@ -1,14 +1,19 @@
 <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Paprika' rel='stylesheet'>
 
-<div class="p-grid">
-  <div class="p-col main_header">
+<div class="p-grid full">
+  <div class="main_header">
     <h1> Bryan Fillion and Kelsey Hill's Wedding </h1>
     <h3> June 20, 2020 </h3>
     <h3> Oregon, OH</h3>
+    <br>
   </div>
-</div>
 
-<div class="container">
-  <router-outlet></router-outlet>
+  <div class="content">
+    <p-tabMenu [model]="items" class="tabs"></p-tabMenu>
+
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

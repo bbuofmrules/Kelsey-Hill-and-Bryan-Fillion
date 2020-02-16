@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'homepage',
@@ -7,16 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  items: Array<MenuItem>;
+  activeItem: MenuItem;
 
   constructor(
-    private _router: Router
+
   ) { }
 
   ngOnInit(): void {
   }
-
-  about(): void {
-    this._router.navigate(["/about"]);
-  }
-
 }
